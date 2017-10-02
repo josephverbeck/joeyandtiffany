@@ -19017,7 +19017,7 @@ body {
 .index-photography-cta {
   margin-top: 70px;
   height: 410px;
-  background: url("../images/graphics/photo-bg.jpg") no-repeat center center;
+  background: url(asset-path("love.jpg")) no-repeat center center;
   background-size: cover;
   text-align: center;
   padding-top: 120px;
@@ -26487,7 +26487,7 @@ body {
   position: absolute;
   height: 100%;
   width: 5430px;
-  background: transparent url("../images/graphics/collage.jpg") repeat-x left top;
+  background: transparent url("/assets/collage.jpg") repeat-x left top;
   -moz-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
