@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  # get 'pages/index'
   root 'pages#index'
+
+  get 'pages/jack_rose', to: "pages#jack_rose", as: "jack_rose"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -15710,6 +15710,15 @@ body {
     top: 0;
     z-index: 999;
   }
+    .navbar.bg-semi-transparent{
+        background-color: gray;
+        opacity:0.75; !important;
+        box-shadow: none !important;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 999;
+    }
 }
 @media (min-width: 992px) {
   .navbar.bg-transparent .dropdown-menu {
@@ -25566,7 +25575,7 @@ body {
 
 .blog-post-3-hero {
   height: 560px;
-  background-image: url("../images/unsplash/photo-1470753937643-efeb931202a9.jpg");
+  background-image: url("/assets/jack_rose_large.jpg");
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -25632,7 +25641,7 @@ body {
 .blog-post-3-footer {
   margin-top: 90px;
   height: 510px;
-  background-image: url("../images/unsplash/photo-1465311530779-5241f5a29892.jpg");
+  background-image: url("/assets/jack_rose_large.jpg");
   background-size: cover;
   background-position: center center;
   padding-top: 70px;
