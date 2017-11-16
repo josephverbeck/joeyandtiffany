@@ -12,9 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- stylesheets -->
-  <%= stylesheet_link_tag "bootstrap.css" %>
   <%= stylesheet_link_tag "theme.css" %>
-
+  <%= stylesheet_link_tag "bootstrap.css" %>
   <!-- javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
@@ -22,16 +21,19 @@
 
 <body>
 <!-- HEADER 09 -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-semi-transparent" style="position: fixed; top: 0px" role="navigation">
-  <div class="container no-override">
+<nav class="navbar navbar-expand-lg navbar-dark bg-semi-transparent" style="position: fixed; width: 100%; top: 0px" role="navigation">
+
+  <div class="container-fluid">
+
     <a class="navbar-brand" href="#home">
       T&J
     </a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
+    <div class="collapse navbar-collapse justify-content-end">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a href="#events" class="nav-link dropdown-toggle">
@@ -43,7 +45,7 @@
             Our Story
           </a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item active">
           <a href="#rsvp" class="nav-link dropdown-toggle" data-toggle="dropdown">
             RSVP
           </a>
@@ -51,6 +53,7 @@
       </ul>
     </div>
   </div>
+
 </nav>
 <section id="home" class="header-09">
   <div class="flexslider-container">
@@ -314,6 +317,7 @@
 
 
 <!-- JavaScript -->
+<%= javascript_include_tag "bootstrap.js" %>
 <%= javascript_include_tag "theme.js" %>
 <%= javascript_include_tag "pace.min.js" %>
 <%= javascript_include_tag "popper.min.js" %>

@@ -10,7 +10,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( bootstrap.css theme.css style-09.css )
 Rails.application.config.assets.precompile += %w( pace.min.js popper.min.js jquery.flexslider-min.js scrollreveal.min.js jquery.min.js )
-Rails.application.config.assets.precompile += %w( theme.js style-09.js )
+Rails.application.config.assets.precompile += %w( theme.js style-09.js bootstrap.js )
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
