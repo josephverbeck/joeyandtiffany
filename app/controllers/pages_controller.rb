@@ -5,4 +5,7 @@ class PagesController < ApplicationController
   def jack_rose
   end
 
+  def our_wedding
+  end
+
 end
