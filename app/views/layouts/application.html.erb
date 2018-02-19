@@ -11,6 +11,54 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-semi-transparent" style="position: fixed; width: 100%; top: 0px" role="navigation">
+
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#home">
+      T&J
+    </a>
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a href="#events" class="nav-link dropdown-toggle">
+            Events
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a href="#story" class="nav-link dropdown-toggle">
+            Our Story
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a href="#photos" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            Photos
+          </a>
+        </li>
+        <li class="nav-item active">
+          <%=link_to "Our Wedding", our_wedding_path, :style=>'color:white', class: "nav-link dropdown-toggle" %>
+        </li>
+        <li class="nav-item active">
+          <a href="#registry" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            Registry
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a href="#rsvp" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            RSVP
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
 <body>
 <%= yield %>
 </body>
