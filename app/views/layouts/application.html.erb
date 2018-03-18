@@ -15,13 +15,14 @@
 
   <div class="container-fluid">
 
-    <a class="navbar-brand" href="#home">
+    <a class="navbar-brand" href="<%=root_path%>#home">
       T&J
     </a>
 
     <button class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <% if current_page?('/') %>
 
     <div class="collapse navbar-collapse justify-content-end">
       <ul class="navbar-nav">
@@ -55,6 +56,8 @@
         </li>
       </ul>
     </div>
+
+    <% end %>
   </div>
 
 </nav>
