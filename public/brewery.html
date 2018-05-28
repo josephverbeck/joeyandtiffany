@@ -1,0 +1,179 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tiffany & Joey</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <link rel="shortcut icon" href="images/T&J.ico">
+  
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="dist/theme.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap/bootstrap.css"/>
+    
+  
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlYNNs7VBO71qiKFMNiD0R9sd8hOt0wD4"></script>
+    <script src="dist/theme.min.js"></script>
+  
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+      <script> 
+      $(function(){
+        $("#header").load("header");
+        $("#footer").load("footer"); 
+      });
+      </script> 
+    
+  </head>
+<body>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div id="header"></div>
+
+  <div class="about-2-hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>
+            <strong>Flying Dog Brewery</strong>
+          </h1>
+          <img src="images/flying_dog_brewery2.jpg" class="pic2 rounded d-none d-lg-inline" 
+            data--280-top="transform:translateY(-70px);"
+            data-bottom="transform:translateY(0px);">
+
+          <img src="images/flying-dog-brewery1.jpg" class="pic1 rounded img-fluid"
+            data--220-top="transform:translateY(-200px);"
+            data-100-bottom="transform:translateY(0px);">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-2-intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="mx-auto w-75">If you’re over 21 and like the taste of beer, head over to Flying Dog Brewery, located at <a href="https://www.google.com/maps/place/Flying+Dog+Brewery/@39.3644306,-77.428446,15.45z/data=!4m5!3m4!1s0x0:0x9d09ad75a7a0027e!8m2!3d39.362807!4d-77.426773">4607 Wedgewood Boulevard in Frederick, Maryland</a>. The tasting room is open Thursday and Friday 3-8 pm, Saturday 12-8 pm and Sundays 12-6 pm. They have a large patio with a food truck. You’ll need to show ID to enter (no fakes allowed). Free tours of the brewery are offered Thursday through Sunday afternoons with a reservation, which can be made here.</p>
+          <a href="http://flyingdogbrewery.com/visit-the-brewery/">Reservation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="agency-contact-map">
+    <div id="map"></div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script type="text/javascript">
+    $(function () {
+      if (!window.utils.isMobile()) {
+        skrollr.init()
+      }
+
+      // Google maps 
+      var mapLocation = new google.maps.LatLng(39.362807,-77.426773);
+
+      var map = new GMaps({
+        streetViewControl : false,
+        overviewMapControl: false,
+        mapTypeControl: false,
+        panControl : false,
+        scrollwheel: false,
+        center: mapLocation,
+        el: '#map',
+        zoom: 15,
+        styles: [
+        {
+          "featureType":"landscape",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":65},
+          {"visibility":"on"}
+          ]
+        },
+        {
+          "featureType":"poi",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":51},
+          {"visibility":"simplified"}
+          ]
+        },
+        {
+          "featureType":"road.highway",
+          "stylers":[
+          {"saturation":-100},
+          {"visibility":"simplified"}
+          ]
+        },
+        {
+          "featureType":"road.arterial",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":30},
+          {"visibility":"on"}
+          ]
+        },
+        {
+          "featureType":"road.local",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":40},
+          {"visibility":"on"}
+          ]
+        },
+        {
+          "featureType":"transit",
+          "stylers":[
+          {"saturation":-100},
+          {"visibility":"simplified"}
+          ]
+        },
+        {
+          "featureType":"administrative.province",
+          "stylers":[
+          {"visibility":"off"}
+          ]
+        },
+        {
+          "featureType":"water",
+          "elementType":"labels",
+          "stylers":[
+          {"visibility":"on"},
+          {"lightness":-25},
+          {"saturation":-100}
+          ]
+        }
+        ]
+      });
+
+      map.addMarker({
+        position: mapLocation,
+        icon: 'images/icons/map-icon.png'
+      });
+    })
+  </script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    // e.src='//www.google-analytics.com/analytics.js';
+    // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+</body>
+</html>

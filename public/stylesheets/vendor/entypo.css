@@ -1,0 +1,83 @@
+/*
+Error: Undefined variable: "$fontsPath".
+        on line 3 of ./public/stylesheets/sass/vendor/entypo.scss
+
+1: @font-face {
+2:   font-family: 'entypo';
+3:   src:  url('#{$fontsPath}/entypo.eot?q1pa5y');
+4:   src:  url('#{$fontsPath}/entypo.eot?q1pa5y#iefix') format('embedded-opentype'),
+5:     url('#{$fontsPath}/entypo.ttf?q1pa5y') format('truetype'),
+6:     url('#{$fontsPath}/entypo.woff?q1pa5y') format('woff'),
+7:     url('#{$fontsPath}/entypo.svg?q1pa5y#entypo') format('svg');
+8:   font-weight: normal;
+
+Backtrace:
+./public/stylesheets/sass/vendor/entypo.scss:3
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/string_interpolation.rb:93:in `_perform'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:186:in `perform_arg'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `block in _perform'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each_with_index'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `map'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `_perform'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:517:in `block (2 levels) in visit_directive'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:517:in `map'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:517:in `block in visit_directive'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:516:in `visit_directive'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/sass-3.5.6/lib/sass/plugin/rack.rb:51:in `call'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/rack-2.0.5/lib/rack/tempfile_reaper.rb:15:in `call'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/rack-2.0.5/lib/rack/lint.rb:49:in `_call'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/rack-2.0.5/lib/rack/lint.rb:37:in `call'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/rack-2.0.5/lib/rack/show_exceptions.rb:23:in `call'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/rack-2.0.5/lib/rack/common_logger.rb:33:in `call'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/rack-2.0.5/lib/rack/chunked.rb:54:in `call'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/rack-2.0.5/lib/rack/content_length.rb:15:in `call'
+/Users/verbeckjb/.rvm/gems/ruby-2.4.1/gems/rack-2.0.5/lib/rack/handler/webrick.rb:86:in `service'
+/Users/verbeckjb/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/verbeckjb/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/verbeckjb/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$fontsPath\".\A         on line 3 of ./public/stylesheets/sass/vendor/entypo.scss\A \A 1: @font-face {\A 2:   font-family: 'entypo';\A 3:   src:  url('#{$fontsPath}/entypo.eot?q1pa5y');\A 4:   src:  url('#{$fontsPath}/entypo.eot?q1pa5y#iefix') format('embedded-opentype'),\A 5:     url('#{$fontsPath}/entypo.ttf?q1pa5y') format('truetype'),\A 6:     url('#{$fontsPath}/entypo.woff?q1pa5y') format('woff'),\A 7:     url('#{$fontsPath}/entypo.svg?q1pa5y#entypo') format('svg');\A 8:   font-weight: normal;"; }
