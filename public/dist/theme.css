@@ -30283,7 +30283,7 @@ body {
   background-image: url("../images/banner1.jpg");
   background-size: cover;
   background-position: center center;
-  min-height: 940px;
+  min-height: 1040px;
   position: relative;
 }
 @media (max-width: 991px) {
