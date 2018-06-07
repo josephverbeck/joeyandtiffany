@@ -11,7 +11,7 @@ map "/header" do
     run lambda { | env | 
     [
         200, 
-        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=3600'},
+        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=86400'},
         File.open('public/header.html', File::RDONLY)
     ]
     } 
@@ -22,7 +22,7 @@ map "/footer" do
     run lambda { | env | 
     [
         200, 
-        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=3600'},
+        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=86400'},
         File.open('public/footer.html', File::RDONLY)
     ]
     } 
@@ -32,7 +32,7 @@ map "/" do
     run lambda { | env | 
     [
         200, 
-        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=3600'},
+        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=86400'},
         File.open('public/index.html', File::RDONLY)
     ]
     }
@@ -42,7 +42,7 @@ map "/rsvp" do
     run lambda { | env | 
     [
         200, 
-        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=3600'},
+        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=86400'},
         File.open('public/rsvp.html', File::RDONLY)
     ]
     }
@@ -52,8 +52,18 @@ map "/brewery" do
     run lambda { | env | 
     [
         200, 
-        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=3600'},
+        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=86400'},
         File.open('public/brewery.html', File::RDONLY)
+    ]
+    }
+end
+
+map "/hotel" do
+    run lambda { | env| 
+    [
+        200,
+        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=86400'},
+        File.open('public/hotel.html', File::RDONLY)
     ]
     }
 end
@@ -62,7 +72,7 @@ map "/food" do
     run lambda { | env | 
     [
         200, 
-        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=3600'},
+        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=86400'},
         File.open('public/stuff_your_face.html', File::RDONLY)
     ]
     }
@@ -72,7 +82,7 @@ map "/mnb" do
     run lambda { | env | 
     [
         200, 
-        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=3600'},
+        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=86400'},
         File.open('public/mnb.html', File::RDONLY)
     ]
     }
@@ -82,7 +92,7 @@ map "/harpers_ferry" do
     run lambda { | env | 
     [
         200, 
-        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=3600'},
+        { 'Content-Type'  => 'text/html', 'Cache-Control' => 'public, max-age=86400'},
         File.open('public/harpers_ferry.html', File::RDONLY)
     ]
     }
