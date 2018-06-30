@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tiffany & Joey</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <link rel="shortcut icon" href="images/T&J.ico">
+  
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="dist/theme.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap/bootstrap.css"/>
+    
+  
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlYNNs7VBO71qiKFMNiD0R9sd8hOt0wD4"></script>
+    <script src="dist/theme.min.js"></script>
+    
+  </head>
+
+  <body>
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  
+    <!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="header"><%= erb :header %></div>
+  
+    <div class="support-topic-hero">
+      <div class="container">
+        <form>
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search help topics" />
+        </form>
+      </div>
+    </div>
+  
+    <div class="support-topic-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 d-none d-md-block">
+            <div class="support-topic-sidebar">
+              <h4>
+                FAQ
+              </h4>
+              <a href="#" class="related-link" onclick="myFunction(stay);return false;">
+                When should I send in my RSVP for the wedding?
+              </a>
+              <a href="#faq_stay" class="related-link">
+                Where can I stay?
+              </a>
+              <a href="#" class="related-link">
+                Where is the wedding venue located?
+              </a>
+              <a href="#" class="related-link">
+                What time should I arrive at the venue for the ceremony and reception?
+              </a>
+              <a href="#" class="related-link">
+                How should I get to the wedding?
+              </a>
+              <a href="#" class="related-link">
+                Will dinner and drinks be provided at the wedding?
+              </a>
+              <a href="#" class="related-link">
+                Can I leave my car at the venue?
+              </a>
+              <a href="#" class="related-link">
+                Can I bring children?
+              </a>
+              <a href="#" class="related-link">
+                Can I bring an adult guest?
+              </a>
+              <a href="#" class="related-link">
+                Can I bring my pet?
+              </a>
+              <a href="#" class="related-link">
+                Are there any other events during the weekend I should know about?
+              </a>
+              <a href="#" class="related-link">
+                What should I wear?
+              </a>
+              <a href="#" class="related-link">
+                Will there be taxis if I need one?
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="support-topic-body">
+              <%= erb :'faq/faq_stay' %>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"><%= erb :footer %></div>
+  
+</body>
+
+</html>

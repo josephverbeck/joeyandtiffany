@@ -20,14 +20,6 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlYNNs7VBO71qiKFMNiD0R9sd8hOt0wD4"></script>
     <script src="dist/theme.min.js"></script>
   
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
-      <script> 
-      $(function(){
-        $("#header").load("header");
-        $("#footer").load("footer"); 
-      });
-      </script> 
-    
   </head>
 <body>
   <!--[if lt IE 9]>
@@ -38,7 +30,7 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div id="header"></div>
+  <div id="header"><%= erb :header %></div>
 
   <div class="about-2-hero">
     <div class="container">
@@ -63,7 +55,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <p class="mx-auto w-75">During her first drive through downtown Frederick, Tiffany said, “How the hell did I not know about this place before?” The town is super cute, full of unique shops and restaurants. Stroll along Carroll Creek Promenade. Enjoy tasty restaurants like those of Top Chef finalist, Bryan Voltaggio, such as Volt and Family Meal. Check out their official website for more information, like top brunch spots and a full list of <a href="https://www.visitfrederick.org/">stores</a></p>
+          <p class="mx-auto w-75">During her first drive through downtown Frederick, Tiffany said, “How the hell did I not know about this place before?” The town is super cute, full of unique shops and restaurants. Stroll along Carroll Creek Promenade. Enjoy tasty restaurants like those of Top Chef finalist, Bryan Voltaggio, such as Volt and Family Meal. Check out their official website for more information, like top brunch spots and a full list of <a href="https://www.visitfrederick.org/">stores.</a></p>
         </div>
       </div>
     </div>
@@ -73,7 +65,7 @@
     <div id="map"></div>
   </div>
 
-  <div id="footer"></div>
+  <div id="footer"><%= erb :footer %></div>
 
   <script type="text/javascript">
     $(function () {

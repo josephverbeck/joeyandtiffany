@@ -19,14 +19,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlYNNs7VBO71qiKFMNiD0R9sd8hOt0wD4"></script>
     <script src="dist/theme.min.js"></script>
-  
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
-      <script> 
-      $(function(){
-        $("#header").load("header");
-        $("#footer").load("footer"); 
-      });
-      </script> 
     
   </head>
 <body>
@@ -38,20 +30,20 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div id="header"></div>
+  <div id="header"> <%= erb :header %> </div>
 
   <div class="about-2-hero">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <h1>
-            <strong>Hotel</strong>
+            <strong>Harpers Ferry</strong>
           </h1>
-          <img src="images/country_inn_1.jpg" class="pic2 rounded d-none d-lg-inline" 
+          <img src="images/harpers_ferry1.jpg" class="pic2 rounded d-none d-lg-inline" 
             data--280-top="transform:translateY(-70px);"
             data-bottom="transform:translateY(0px);">
 
-          <img src="images/country_inn_2.jpg" class="pic1 rounded img-fluid"
+          <img src="images/harpers_ferry2.jpg" class="pic1 rounded img-fluid"
             data--220-top="transform:translateY(-200px);"
             data-100-bottom="transform:translateY(0px);">
         </div>
@@ -63,7 +55,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <p class="mx-auto w-75">We have reserved a room block at the Country Inn & Suites. Free breakfast and wi-fi are provided (but no promises either will be the best you have ever experienced). The group rate is $99/night and can be up to a 35-minute drive to the wedding venue with traffic. The group shuttle to and from the wedding venue will pick up and drop off here. Dogs are allowed to stay here for an additional $20 charge, so if you would prefer not to get a dog sitter, feel free to bring your furball. Just please plan to leave them at the hotel during the actual wedding. Reservations can be made <a href="https://www.countryinns.com/frederickmdjoslinverbeckwedding">here.</a> or call 301-695-2881 and ask to be put under the Joslin-Verbeck group block. You must make your reservation by August 8 in order to receive the group rate.</p>
+          <p class="mx-auto w-75">Just go there. Harpers Ferry is about a 30-minute-drive from Frederick. But take our word for it: This place is worth a visit. It’s on the river, offers tons of historical tours, 20 miles of hiking trails, and not to mention great places to eat and drink. Take a look at the <a href="https://www.nps.gov/hafe/index.htm">website</a> for more information</p>
         </div>
       </div>
     </div>
@@ -73,7 +65,7 @@
     <div id="map"></div>
   </div>
 
-  <div id="footer"></div>
+  <div id="footer"> <%= erb :footer %> </div>
 
   <script type="text/javascript">
     $(function () {
@@ -82,7 +74,7 @@
       }
 
       // Google maps 
-      var mapLocation = new google.maps.LatLng(39.3866981,-77.4767119);
+      var mapLocation = new google.maps.LatLng(39.3257362,-77.7589071);
 
       var map = new GMaps({
         streetViewControl : false,

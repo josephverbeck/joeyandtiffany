@@ -19,14 +19,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlYNNs7VBO71qiKFMNiD0R9sd8hOt0wD4"></script>
     <script src="dist/theme.min.js"></script>
-  
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
-      <script> 
-      $(function(){
-        $("#header").load("header");
-        $("#footer").load("footer"); 
-      });
-      </script> 
     
   </head>
 <body>
@@ -38,20 +30,20 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div id="header"></div>
+  <div id="header"><%= erb :header %></div>
 
   <div class="about-2-hero">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <h1>
-            <strong>Flying Dog Brewery</strong>
+            <strong>Monocacy National Battlefield</strong>
           </h1>
-          <img src="images/flying_dog_brewery2.jpg" class="pic2 rounded d-none d-lg-inline" 
+          <img src="images/monocacy-national-battlefield1.jpg" class="pic2 rounded d-none d-lg-inline" 
             data--280-top="transform:translateY(-70px);"
             data-bottom="transform:translateY(0px);">
 
-          <img src="images/flying-dog-brewery1.jpg" class="pic1 rounded img-fluid"
+          <img src="images/monocacy-national-battlefield2.jpg" class="pic1 rounded img-fluid"
             data--220-top="transform:translateY(-200px);"
             data-100-bottom="transform:translateY(0px);">
         </div>
@@ -63,8 +55,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <p class="mx-auto w-75">If you’re over 21 and like the taste of beer, head over to Flying Dog Brewery, located at <a href="https://www.google.com/maps/place/Flying+Dog+Brewery/@39.3644306,-77.428446,15.45z/data=!4m5!3m4!1s0x0:0x9d09ad75a7a0027e!8m2!3d39.362807!4d-77.426773">4607 Wedgewood Boulevard in Frederick, Maryland</a>. The tasting room is open Thursday and Friday 3-8 pm, Saturday 12-8 pm and Sundays 12-6 pm. They have a large patio with a food truck. You’ll need to show ID to enter (no fakes allowed). Free tours of the brewery are offered Thursday through Sunday afternoons with a reservation, which can be made here.</p>
-          <a href="http://flyingdogbrewery.com/visit-the-brewery/">Reservation</a>
+          <p class="mx-auto w-75">For the history nerds, pay a visit to Monocacy National Battlefield, located about 10 minutes south of Frederick at 5201 Urbana Pike in Frederick, Maryland. The visitor center is open from 9:00 a.m. to 5:00 p.m. every day of the week. Plus, it’s a cheap date—entrance is free.</p>
         </div>
       </div>
     </div>
@@ -74,7 +65,7 @@
     <div id="map"></div>
   </div>
 
-  <div id="footer"></div>
+  <div id="footer"><%= erb :footer %></div>
 
   <script type="text/javascript">
     $(function () {
@@ -83,7 +74,7 @@
       }
 
       // Google maps 
-      var mapLocation = new google.maps.LatLng(39.362807,-77.426773);
+      var mapLocation = new google.maps.LatLng(39.3725838,-77.398982);
 
       var map = new GMaps({
         streetViewControl : false,
