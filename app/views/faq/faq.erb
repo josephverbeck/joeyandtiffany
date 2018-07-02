@@ -51,50 +51,50 @@
               <h4>
                 FAQ
               </h4>
-              <a href="#" class="related-link" onclick="myFunction(stay);return false;">
+              <a href="#" id="rsvp" class="related-link">
                 When should I send in my RSVP for the wedding?
               </a>
-              <a href="#faq_stay" class="related-link">
+              <a href="#" id="stay" class="related-link">
                 Where can I stay?
               </a>
-              <a href="#" class="related-link">
+              <a href="#" id="location" class="related-link">
                 Where is the wedding venue located?
               </a>
-              <a href="#" class="related-link">
+              <a href="#" id="arrive_time" class="related-link">
                 What time should I arrive at the venue for the ceremony and reception?
               </a>
-              <a href="#" class="related-link">
+              <a href="#" id="getting_there" class="related-link">
                 How should I get to the wedding?
               </a>
-              <a href="#" class="related-link">
+              <a href="#" id="dinner" class="related-link">
                 Will dinner and drinks be provided at the wedding?
               </a>
-              <a href="#" class="related-link">
+              <a href="#" id="car" class="related-link">
                 Can I leave my car at the venue?
               </a>
-              <a href="#" class="related-link">
+              <a href="#" id="children" class="related-link">
                 Can I bring children?
               </a>
-              <a href="#" class="related-link">
+              <a href="#" id="guest" class="related-link">
                 Can I bring an adult guest?
               </a>
-              <a href="#" class="related-link">
+              <a href="#" id="pet" class="related-link">
                 Can I bring my pet?
               </a>
-              <a href="#" class="related-link">
+              <a href="#" id="other_events" class="related-link">
                 Are there any other events during the weekend I should know about?
               </a>
-              <a href="#" class="related-link">
+              <a href="#" id="attire" class="related-link">
                 What should I wear?
               </a>
-              <a href="#" class="related-link">
+              <a href="#" id="taxi" class="related-link">
                 Will there be taxis if I need one?
               </a>
             </div>
           </div>
           <div class="col-md-8">
             <div class="support-topic-body">
-              <%= erb :'faq/faq_stay' %>
+              <div id="resultText"><%= erb :'faq/faq_rsvp' %> </div>
             </div>
           </div>
       </div>
@@ -102,6 +102,205 @@
   </div>
   <div id="footer"><%= erb :footer %></div>
   
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script>
+      $('#stay').on('click', function (){
+        $.ajax({
+        url: '/faq/stay',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#location').on('click', function (){
+        $.ajax({
+        url: '/faq/location',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#arrive_time').on('click', function (){
+        $.ajax({
+        url: '/faq/arrive_time',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#getting_there').on('click', function (){
+        $.ajax({
+        url: '/faq/getting_there',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#dinner').on('click', function (){
+        $.ajax({
+        url: '/faq/dinner',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#car').on('click', function (){
+        $.ajax({
+        url: '/faq/car',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#children').on('click', function (){
+        $.ajax({
+        url: '/faq/children',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#guest').on('click', function (){
+        $.ajax({
+        url: '/faq/guest',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#pet').on('click', function (){
+        $.ajax({
+        url: '/faq/pets',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#other_events').on('click', function (){
+        $.ajax({
+        url: '/faq/other_events',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#attire').on('click', function (){
+        $.ajax({
+        url: '/faq/attire',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#taxi').on('click', function (){
+        $.ajax({
+        url: '/faq/taxi',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#rsvp').on('click', function (){
+        $.ajax({
+        url: '/faq/rsvp',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+    </script>
+
+
 </body>
 
 </html>
