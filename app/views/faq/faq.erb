@@ -51,6 +51,9 @@
               <h4>
                 FAQ
               </h4>
+              <a href="#" id="directions" class="related-link">
+                Directions?
+              </a>
               <a href="#" id="rsvp" class="related-link">
                 When should I send in my RSVP for the wedding?
               </a>
@@ -94,7 +97,7 @@
           </div>
           <div class="col-md-8">
             <div class="support-topic-body">
-              <div id="resultText"><%= erb :'faq/faq_rsvp' %> </div>
+              <div id="resultText"><%= erb :'faq/directions' %> </div>
             </div>
           </div>
       </div>
@@ -287,6 +290,21 @@
       $('#rsvp').on('click', function (){
         $.ajax({
         url: '/faq/rsvp',
+        contentType: 'application/html',
+        type: 'GET',
+        dataType: 'html'
+        }).success(function (result) {
+          $('#resultText').show();
+          $('#resultText').html(result);
+        })
+        .error(function (xhr, status) {
+          alert(status);
+        })
+      });
+
+      $('#directions').on('click', function (){
+        $.ajax({
+        url: '/faq/directions',
         contentType: 'application/html',
         type: 'GET',
         dataType: 'html'

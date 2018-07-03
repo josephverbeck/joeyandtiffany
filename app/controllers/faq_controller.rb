@@ -57,4 +57,8 @@ class FaqController < ApplicationController
         erb :'faq/taxi'
     end
 
+    get '/directions' do
+        erb :'faq/directions'
+    end
+
 end
