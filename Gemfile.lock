@@ -5,6 +5,7 @@ GEM
     heroku (3.99.3)
     jquery (0.0.1)
     mustermann (1.0.2)
+    puma (3.11.4)
     rack (2.0.5)
     rack-protection (2.0.3)
       rack
@@ -29,6 +30,7 @@ PLATFORMS
 DEPENDENCIES
   heroku
   jquery
+  puma (~> 3.0)
   rack
   sass
   sinatra

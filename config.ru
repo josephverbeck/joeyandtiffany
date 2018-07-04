@@ -1,7 +1,20 @@
 require 'sinatra/base'
 require 'rubygems'
 
-Dir.glob('./app/{controllers}/*.rb').each { | file | require file }
+require './app/controllers/application_controller'
+require './app/controllers/brewery_controller'
+require './app/controllers/faq_controller'
+require './app/controllers/harpers_controller'
+require './app/controllers/hotel_controller'
+require './app/controllers/monocacy_national_battlefield_controller'
+require './app/controllers/rsvp_controller'
+require './app/controllers/stuff_your_face_controller'
+require './app/controllers/things_to_do_controller'
+
+
+
+
+# Dir.glob('app/{controllers}/*.rb').each { | file | require file }
 
 map('/') { run ApplicationController }
 map('/brewery') { run BreweryController }
