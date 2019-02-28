@@ -9,5 +9,6 @@ gem 'rack'
 gem 'puma', '~> 3.0'
 gem 'sinatra'
 gem 'sass'
+#gem 'sassc' Will replace sass as of March 2019
 gem 'jquery'
-gem 'heroku'
+#gem 'heroku'
